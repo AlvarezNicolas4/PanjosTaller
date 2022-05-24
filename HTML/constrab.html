@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="shortcut icon" href="../IMG/mechanic.png" type="image/x-icon" />
+    <title>PANJOS</title>
+  </head>
+  <header class="header"><h1>CONSULTAS POR TRABAJO</h1></header>
+  <nav class="navP">
+    <ul>
+      <li><a href="../Index.html">HOME</a></li>
+      <li><a href="servicio.html">SERVICIOS</a></li>
+      <li><a href="consulta.html">CONSULTAS</a></li>
+      <li><a href="registro.html">REGISTROS</a></li>
+      <li><a href="mantenimiento.html">MANTENIMIENTO</a></li>
+    </ul>
+  </nav>
+  <br />
+  <br />
+  <nav class="navS">
+    <ul>
+      <li><a href="consfecha.html">CONSULTAR POR FECHA</a></li>
+      <li><a href="constrab.html">CONSULTAR POR TRABAJO</a></li>
+      <li><a href="conscli.html">CONSULTAR POR CLIENTES</a></li>
+      <li><a href="consmat.html">CONSULTAR POR MATRICULA</a></li>
+    </ul>
+  </nav>
+  <body class="body">
+    <br />
+    <br />
+    <!-- ESTO SERIA COMO SE VERIA LOS REGISTROS POR ID TRABAJO -->
+    <table class="busq" border="3">
+      <tr>
+        <th>
+          <label for="idtrab">IdTrab:</label>
+          <input
+            type="text"
+            name="idtrab"
+            placeholder="Ing IDTrab"
+            id="idtrab"
+          />
+        </th>
+        <th><button type="submit">BUSCAR</button></th>
+        <th><button type="reset">RESTABLECER</button></th>
+      </tr>
+    </table>
+    <table border="2">
+      <th>
+        <label for="">Todos los Registros</label>
+        <input type="radio" name="cantreg" id="tr" />
+      </th>
+      <th>
+        <label for="">Solo Registros Pendientes</label>
+        <input type="radio" name="cantreg" id="rp" />
+      </th>
+
+      <th>
+        <label for="">Solo Registros Terminados</label>
+        <input type="radio" name="cantreg" id="rc" />
+      </th>
+    </table>
+    <h2>resultado esperado</h2>
+    <table class="busq">
+      <tr>
+        <th><u> ID TRABAJO </u></th>
+        <th>ESTADO</th>
+        <th>FECHA</th>
+        <th>NOMBRE CLIENTE</th>
+        <th>MATRICULA</th>
+        <th>MARCA-MODELO</th>
+        <th>AÑO</th>
+        <th>KM o Datos adicionales</th>
+        <th>SERVICIO BRINDADO</th>
+        <th>PROBLEMA</th>
+        <th>SOLUCION</th>
+        <th>DETALLE o REPUESTO</th>
+        <th>COSTO</th>
+        <th>VER</th>
+      </tr>
+      <!-- ESTO SERIAN REGISTROS -->
+      <tr>
+        <td><u> 15</u></td>
+        <td>terminado</td>
+        <td>15/08/2021</td>
+        <td>Mario Perdonmo</td>
+        <td>MAF2048</td>
+        <td>Renault Clio</td>
+        <td>2000</td>
+        <td>23084KM</td>
+        <td>Cambio de faroles</td>
+        <td>Faroles quemados</td>
+        <td>Cambio faroles frontales</td>
+        <td><a href="../IMG/descarga.jpg">Repuesto</a></td>
+        <td>2500</td>
+        <td><a href="../IMG/p1.jpg">#</a></td>
+      </tr>
+    </table>
+  </body>
+  <footer class="footer"></footer>
+</html>
