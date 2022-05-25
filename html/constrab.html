@@ -32,36 +32,21 @@
     <br />
     <br />
     <!-- ESTO SERIA COMO SE VERIA LOS REGISTROS POR ID TRABAJO -->
-    <table class="busq" border="3">
-      <tr>
-        <th>
-          <label for="idtrab">IdTrab:</label>
-          <input
-            type="text"
-            name="idtrab"
-            placeholder="Ing IDTrab"
-            id="idtrab"
-          />
-        </th>
-        <th><button type="submit">BUSCAR</button></th>
-        <th><button type="reset">RESTABLECER</button></th>
-      </tr>
-    </table>
-    <table border="2">
-      <th>
+    <fieldset class="feconc">
+      <form action="">
+        <label for="idtrab">Ingrese ID TRABAJO:</label>
+        <input type="text" name="idtrab" id="idtrab" />
         <label for="">Todos los Registros</label>
         <input type="radio" name="cantreg" id="tr" />
-      </th>
-      <th>
         <label for="">Solo Registros Pendientes</label>
         <input type="radio" name="cantreg" id="rp" />
-      </th>
-
-      <th>
         <label for="">Solo Registros Terminados</label>
         <input type="radio" name="cantreg" id="rc" />
-      </th>
-    </table>
+        <br />
+        <button type="submit">BUSCAR</button>
+        <button type="reset">RESTABLECER VALORES</button>
+      </form>
+    </fieldset>
     <h2>resultado esperado</h2>
     <table class="busq">
       <tr>
