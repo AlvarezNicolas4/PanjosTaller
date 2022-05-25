@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../img/mechanic.png" type="image/x-icon" />
+    <title>PANJOS</title>
+  </head>
+  <header class="header"><h1>CONSULTAS POR DOCUMENTO</h1></header>
+  <nav class="navP">
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="servicio.html">SERVICIOS</a></li>
+      <li><a href="consulta.html">CONSULTAS</a></li>
+      <li><a href="registro.html">REGISTROS</a></li>
+      <li><a href="mantenimiento.html">MANTENIMIENTO</a></li>
+    </ul>
+  </nav>
+  <br />
+  <br />
+  <nav class="navS">
+    <ul>
+      <li><a href="consfecha.html">CONSULTAR POR FECHA</a></li>
+      <li><a href="constrab.html">CONSULTAR POR TRABAJO</a></li>
+      <li><a href="conscli.html">CONSULTAR POR CLIENTES</a></li>
+      <li><a href="consmat.html">CONSULTAR POR MATRICULA</a></li>
+    </ul>
+  </nav>
+  <body class="body">
+    <br />
+    <br />
+    <!-- ESTO SERIA COMO SE VERIA LOS REGISTROS POR ID- TRABAJO -->
+    <fieldset class="feconc">
+      <form action="">
+    <label for="doc">Ingrese Documento:</label>
+  <input type="text" name="doc" id="doc" />
+</fieldset>
+<button type="submit">BUSCAR</button>
+<button type="reset">RESTABLECER VALORES</button>
+</form>
+    <br />
+    <br />
+    <h2>resultado esperado</h2>
+    <table border="6">
+      <tr>
+        <th><u> DOCUMENTO </u></th>
+        <th>NOMBRE</th>
+        <th>DIRECCION</th>
+        <th>TELEFONO</th>
+        <th>DATOS adicionales</th>
+      </tr>
+      <th colspan="5" class="listreg">LISTA DE REGISTROS</th>
+
+      <tr>
+        <td>FECHA</td>
+        <td>ID TRABAJO</td>
+        <td>MATRICULA</td>
+        <td>SERVICIO BRINDADO</td>
+        <td>COSTO</td>
+      </tr>
+      <!-- ESTO SERIAN REGISTROS -->
+      <tr>
+        <td>15/08/2021</td>
+        <td>15</td>
+        <td>MAL1542</td>
+        <td>cAMBIO DE FAROLES</td>
+        <td>2700</td>
+      </tr>
+    </table>
+  </body>
+  <footer class="footer"></footer>
+</html>

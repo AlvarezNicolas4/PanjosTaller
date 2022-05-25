@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../img/mechanic.png" type="image/x-icon" />
+    <title>PANJOS</title>
+  </head>
+  <header class="header"><h1>PANJOS SERVICIOS</h1></header>
+  <nav class="navP">
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="servicio.html">SERVICIOS</a></li>
+      <li><a href="consulta.html">CONSULTAS</a></li>
+      <li><a href="registro.html">REGISTROS</a></li>
+      <li><a href="mantenimiento.html">MANTENIMIENTO</a></li>
+    </ul>
+  </nav>
+
+  <br />
+  <br />
+
+  <body class="body">
+    <div class="formnewser">
+      <h2>INGRESO DE SERVICIO</h2>
+      <fieldset>
+        <legend>[COMPLETAR CAMPOS]</legend>
+        <form action="" method="get">
+          <button>ID TRABAJO</button>
+          <br />
+          <label for="fecha">Fecha Ingreso:</label>
+          <input type="datetime-local" name="fecha" id="fecha" />
+          <label for="fechasal">Fecha Tentativa Fin:</label>
+          <input type="date" name="fesal" id="fesal" />
+          <br />
+          <label for="documento">Documento:</label>
+          <input type="text" name="doc" id="doc" />
+          <label for="nombrecliente">Nombre Cliente:</label>
+          <input type="text" name="nomCli" id="nomCli" />
+          <br />
+          <label for="chapa">Matricula:</label>
+          <input type="text" name="chapa" id="chapa" />
+          <label for="auto">Modelo:</label>
+          <input type="text" name="auto" id="auto" />
+          <label for="km">KM:</label>
+          <input type="number" name="km" id="km" />
+          <br />
+          <label for="service">Servicio:</label>
+          <input type="text" name="serv" id="serv" />
+          <label for="prob">Problema:</label>
+          <input type="text" name="prob" id="prob" />
+          <label for="sol">Solucion:</label>
+          <input type="text" name="sol" id="sol" />
+          <br />
+          <label for="deta">DETALLE:</label>
+          <input type="text" name="deta" id="deta" />
+          <br />
+          <label for="costo">Costo:</label>
+          <input type="number" name="costo" id="costo" />
+          <br />
+          <label for="status">Servicio Terminado?</label>
+          <input type="checkbox" name="status" id="status" />
+          <br />
+          <button type="submit">AGREGAR A COLA</button>
+          <button type="reset">RESTABLECER VALORES</button>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+  <footer class="footer"></footer>
+</html>
